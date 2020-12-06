@@ -48,46 +48,62 @@
     </div>
 
     <div id="botoes_funcionario">
-      <button>Cadastro</button><br><br>
-      <button>Atendimento</button><br><br>
-      <button>Detalhe</button><br><br>
+      <button id="botaoCadastro">Cadastro</button><br><br>
+      <button id="botaoAtendimento">Atendimento</button><br><br>
+      <button id="botaoDetalhe">Detalhe</button><br><br>
     </div>
 
   </div>
 
   <h4> Atendimento </h4>
 
-  <div id="atendimento" class="painel_com_bordar">
+  <div id="atendimento" class="painel_flex_com_bordar">
 
-    <div id="dados_atendimento" class="painel_flex">
-
-      <label>Data Atendimento</label><input type="date" name="input" id="data_atendimento">
-      <label for="tipoConsulta">Tipo Consulta:</label>
-      <select name="tipoConsulta" id="tipoConsulta">
-        <option value="admissonal">Admissonal</option>
-      </select>
-      <label for="retornoTrabalho">Retorno ao Trabalho:</label>
-      <select name="retornoTrabalho" id="retornoTrabalho">
-        <option value="default"> - </option>
-      </select>
-      <div>
-        <label>Situação Atendimento</label><br><span> - </span>
-      </div>
-      <button>Adicionar Exame</button>
-    </div>
-    <br>
-    <br>
-    <br>
     <div>
+      <div id="dados_atendimento" class="painel_flex">
+        <label>Data Atendimento</label><input type="date" name="input" id="dataAtendimento">
+        <label for="tipoConsulta">Tipo Consulta:</label>
+        <select name="tipoConsulta" id="tipoConsulta">
+          <option value="admissonal">Admissonal</option>
+        </select>
+        <label for="retornoTrabalho">Retorno ao Trabalho:</label>
+        <select name="retornoTrabalho" id="retornoTrabalho">
+          <option value="default"> - </option>
+        </select>
+        <div>
+          <label>Situação Atendimento</label><br><span id="situacaoAtendimento"> - </span>
+        </div>
+        <button id="botaoAdicionarExame">Adicionar Exame</button>
+      </div>
+      <br>
+      <br>
+      <div>
+        <table border="1px" id="tabelaExame">
+          <th>Exame</th>
+          <th>Data Realização</th>
+          <th>Clínica</th>
+          <th>Responsável</th>
+        </table>
+      </div>
+    </div>
+
+
+    <div>
+      <label for="riscos">Riscos:</label>
+      <select name="riscos" id="riscos">
+        <option value="ruido">Ruído</option>
+      </select>
+      <button id="botaoAdicionarRisco">add</button>
       <table border="1px">
-        <th>Exame</th>
-        <th>Data Realização</th>
-        <th>Clínica</th>
-        <th>Responsável</th>
+        <th>Riscos</th>
+        <th>Comentários</th>
       </table>
     </div>
   </div>
-
+  <br>
+  <br>
+  <br>
+  <button id="visualizarASO">Visualizar ASO</button>
 
 </body>
 
