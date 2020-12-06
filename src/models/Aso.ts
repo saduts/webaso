@@ -5,7 +5,7 @@ import { Risco } from "./Risco";
 import { TipoConsulta } from "./TipoConsulta";
 import { Usuario } from "./Usuario";
 
-class Aso {
+export class Aso {
 
   private funcionario: Funcionario;
   private empresa: Empresa;
