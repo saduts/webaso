@@ -1,0 +1,47 @@
+import React, { useState } from "react";
+import DadosFuncionario from "../components/dados-funcionario/dadosFuncionario";
+import Funcionario from "../models/Funcionario";
+import './containers.css'
+
+interface AtendimentoProps {
+  funcionario: Funcionario;
+}
+
+const ContAtendimento = (props: AtendimentoProps) => {
+
+  const [funcionario, setFuncionario] = useState(props.funcionario);
+
+  return (
+    <>
+      <span className={'spanTitle'}>Atendimeto</span>
+      <div className={'divPanelAtendimento'}>
+        <div className={'divPanelColuna'}>
+          <span className={'spanTitleAtendimento'}>Data do atendimento</span>
+          <input type="date" name="nomeFuncionario" />
+        </div>
+        <div className={'divPanelColuna'}>
+          <span className={'spanTitleAtendimento'}>Tipo Consulta</span>
+          <select name="tipoConsulta" id="tipoConsulta">
+            <option value="admissonal">Admissonal</option>
+          </select>
+        </div>
+        <div className={'divPanelColuna'}>
+          <span className={'spanTitleAtendimento'}>Retorno ao Trabalho</span>
+          <select name="tipoConsulta" id="tipoConsulta">
+            <option value="admissonal">Admissonal</option>
+          </select>
+        </div>
+        <div className={'divPanelColuna'}>
+          <span className={'spanTitleAtendimento'}>Situação Atendimento</span>
+          <span className={'spanTitleAtendimento'}>ATENDIDO</span>
+        </div>
+        <div className={'divPanel'}>
+          <button className={'divButton'}>Adionar Exame</button>
+        </div>
+      </div>
+    </>
+  )
+
+}
+
+export default ContAtendimento;
