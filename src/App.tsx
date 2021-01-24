@@ -12,7 +12,7 @@ export const App = () => {
       <div className={'App-header'}>
         <div><span className={'AppTitle'}>ASO WEB</span></div>
         <ContFuncionario funcionario={initFuncionario} />
-        <ContAtendimento funcionario={initFuncionario} />
+        <ContAtendimento />
       </div>
     </>
   );

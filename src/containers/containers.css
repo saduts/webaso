@@ -42,6 +42,14 @@
   border-radius: 5px;
 }
 
+.divPanelAtendimento {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  border: 1px solid black ;
+  border-radius: 5px;
+}
+
 .divPanelColuna {
   display: flex;
   flex-direction: column;
@@ -52,6 +60,18 @@
   line-height: 2;
   margin-bottom: 15px;
 }
+
+.divPanelLinha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 5px;
+  padding: 10px;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
 
 .spanTitleAtendimento {
   font-size: 10px;
