@@ -15,8 +15,8 @@
 .divPanel {
   display: flex;
   flex-direction: column;
-  margin-left: 5px;
-  padding: 10px;
+  margin-left: 2px;
+  padding: 5px;
 }
 
 .inputTextFuncionario {
@@ -54,7 +54,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
   margin-left: 5px;
   padding: 10px;
   line-height: 2;
@@ -65,16 +64,22 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
   margin-left: 5px;
   padding: 10px;
   line-height: 2;
   margin-bottom: 15px;
 }
 
-
 .spanTitleAtendimento {
   font-size: 10px;
   font-weight: bold;
   color: black;
+}
+
+.divPanelDireita {
+  margin-left: 300px;
+  display: block;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
