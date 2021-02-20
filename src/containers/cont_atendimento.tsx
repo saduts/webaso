@@ -45,8 +45,8 @@ const ContAtendimento = () => {
           <div className={'divPanel'}>
             <ContRiscos />
           </div>
-
         </div>
+        <button className={'divButton'}>Imprimir ASO</button>
       </div>
     </>
   )

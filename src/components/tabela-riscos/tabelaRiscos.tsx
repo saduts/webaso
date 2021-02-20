@@ -1,15 +1,19 @@
-import React from "react";
-import { Risco } from "../../models/Risco";
+import React, { useState, useEffect } from "react"
 import './tabelaRiscos.css';
 
-interface RiscosProps {
-  listaRiscos: Array<Risco>
+interface IRiscosProps {
+  listaRiscos: [{ risco: string, comentario: string }]
 }
 
-const TabelaRiscos = (props: RiscosProps) => {
-  let listaRiscos = props.listaRiscos;
-  listaRiscos.push(Risco.Ambiental);
-  listaRiscos.push(Risco.Ambiental);
+const TabelaRiscos = (props: IRiscosProps) => {
+
+  const [riscosProps, setRiscosProps] = useState<IRiscosProps>({ listaRiscos: [{ risco: 'Risco', comentario: 'Comentário' }] })
+
+  useEffect(() => {
+    setRiscosProps(props);
+  })
+
+  console.log("tabela -- " + riscosProps.listaRiscos)
 
   return (
     <>
@@ -20,11 +24,11 @@ const TabelaRiscos = (props: RiscosProps) => {
             <th>Comentário</th>
           </tr>
           {
-            listaRiscos.map((item) => {
+            riscosProps.listaRiscos.map((item) => {
               return (
                 <tr>
-                  <td>{item}</td>
-                  <td>Comentário do cadasto no add...</td>
+                  <td>{item.risco}</td>
+                  <td>{item.comentario}</td>
                 </tr>)
             })}
         </table>
