@@ -1,19 +1,13 @@
-import React, { useState, useEffect } from "react"
+import * as React from 'react'
 import './tabelaRiscos.css';
 
-interface IRiscosProps {
-  listaRiscos: [{ risco: string, comentario: string }]
+interface IProps {
+  risco: number
 }
 
-const TabelaRiscos = (props: IRiscosProps) => {
+const TabelaRiscos: React.FC<IProps> = (props) => {
 
-  const [riscosProps, setRiscosProps] = useState<IRiscosProps>({ listaRiscos: [{ risco: 'Risco', comentario: 'Comentário' }] })
-
-  useEffect(() => {
-    setRiscosProps(props);
-  })
-
-  console.log("tabela -- " + riscosProps.listaRiscos)
+  console.log("tabela -- " + props.risco)
 
   return (
     <>

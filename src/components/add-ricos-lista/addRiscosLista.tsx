@@ -1,20 +1,24 @@
-import React, { useState, useEffect } from "react"
+import * as React from 'react'
 import TebelaRiscos from "../tabela-riscos/tabelaRiscos"
 import './addRiscoLista.css'
 import '../../containers/containers.css'
 
-const ContRiscos = () => {
+const ContRiscos: React.FC = () => {
 
-  interface IRiscosProps {
-    listaRiscos: [{ risco: string, comentario: string }]
+  const [riscosProps, setRiscosProps] = React.useState(100)
+  const [contagem, setCount] = React.useState(0);
+
+  const addRisco = () => {
+    let c = riscosProps
+    c = c++
+    setRiscosProps(c + 1)
+    setCount(c + 1)
+    console.log(c)
   }
 
-  let listaRisco: IRiscosProps = { listaRiscos: [{ risco: 'Risco', comentario: 'Comentário' }] }
-
-  function addRisco() {
-    listaRisco.listaRiscos.push({ risco: 'Risco Novo', comentario: 'Comentario Novo' })
-    console.log(listaRisco)
-  }
+  React.useEffect(() => {
+    console.log("Effect")
+  }, [riscosProps])
 
   return (
     <>
@@ -30,9 +34,13 @@ const ContRiscos = () => {
         <div className={'divPanel'}>
           <button className={'divButton'} onClick={addRisco}>Adicionar Risco</button>
         </div>
+        <div>
+          {contagem}
+          {riscosProps}
+        </div >
       </div>
       <div className={'divPanel'}>
-        <TebelaRiscos listaRiscos={listaRisco.listaRiscos} />
+        <TebelaRiscos risco={riscosProps} />
       </div>
     </>
   )
