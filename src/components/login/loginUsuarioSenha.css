@@ -1,0 +1,30 @@
+.spanTitle {
+  width: 100%;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  margin-left: 40px;
+  line-height: 1.8;
+}
+
+.divLinha {
+  BORDER-BOTTOM: black 1px solid; 
+}
+
+.spanSubTitle {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: black;
+}
+
+.divPanelInformacao {
+  width: 350px;
+  border: 1px solid black ;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px;
+}

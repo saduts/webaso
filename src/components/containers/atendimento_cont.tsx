@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TebelaExame from "../components/tabela-exame/tabelaExame";
-import ContRiscos from "../components/add-ricos-lista/addRiscosLista";
+import TebelaExame from "../exame-tabela/exameTabela";
+import ContRiscos from "../riscos/ricos-lista-add/riscosListaAdd";
 import './containers.css'
 
 const ContAtendimento = () => {

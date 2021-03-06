@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import DadosFuncionario from "../components/dados-funcionario/dadosFuncionario";
-import Funcionario from "../models/Funcionario";
+import DadosFuncionario from "../funcionario-dados/funcionarioDados"
+import Funcionario from "../../models/Funcionario";
 import './containers.css'
 
 interface FuncionarioProps {
@@ -32,7 +32,6 @@ const ContFuncionario = (props: FuncionarioProps) => {
       </div>
     </>
   )
-
 }
 
-export default ContFuncionario;
+export default ContFuncionario

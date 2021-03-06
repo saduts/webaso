@@ -17,14 +17,7 @@ const TabelaRiscos: React.FC<IProps> = (props) => {
             <th>Risco</th>
             <th>Comentário</th>
           </tr>
-          {
-            riscosProps.listaRiscos.map((item) => {
-              return (
-                <tr>
-                  <td>{item.risco}</td>
-                  <td>{item.comentario}</td>
-                </tr>)
-            })}
+
         </table>
       </div>
     </>

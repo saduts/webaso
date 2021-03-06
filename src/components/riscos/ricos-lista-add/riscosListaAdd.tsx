@@ -1,7 +1,7 @@
 import * as React from 'react'
-import TebelaRiscos from "../tabela-riscos/tabelaRiscos"
+import TebelaRiscos from "../riscos-tabela/riscosTabela"
 import './addRiscoLista.css'
-import '../../containers/containers.css'
+import '../containers/containers.css'
 
 const ContRiscos: React.FC = () => {
 
