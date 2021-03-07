@@ -7,7 +7,6 @@ export const App = () => {
   return (
     <>
       <div className={'App-header'}>
-        <div><span className={'AppTitle'}>ASO WEB</span></div>
         <LoginCont />
       </div>
     </>

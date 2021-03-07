@@ -1,3 +1,23 @@
+body {
+  display: grid;
+  height: 100vh;
+}
+
+main {
+  place-self: center;
+}
+
+.funcionarioContPainelCentral{
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-left: -170px; /* (width + padding)/2 */
+  margin-top: -120px; /* (height + padding)/2 */
+  align-content: center;
+}
+
 .divPanelFuncionario {
   display: flex;
   width: 97%;
@@ -28,7 +48,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  margin-left: 5px;
+  margin-top: 10px;
   padding: 10px;
   line-height: 2;
   margin-bottom: 15px;

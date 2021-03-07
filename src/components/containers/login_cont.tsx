@@ -5,7 +5,14 @@ import './containers.css'
 const LoginCont = () => {
   return (
     <>
-      <Login />
+      <div>
+        <span className={'AppTitle'}>ASO WEB</span>
+      </div>
+      <div className={'funcionarioContPainelCentral'}>
+        <div>
+          <Login />
+        </div>
+      </div>
     </>
   )
 }
