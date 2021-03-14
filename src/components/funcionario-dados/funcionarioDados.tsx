@@ -1,6 +1,6 @@
 import React from "react";
 import Funcionario from "../../models/Funcionario"
-import './dadosFuncionario.css'
+import './funcionarioDados.css'
 
 interface DadosFuncionarioProps {
   funcionario: Funcionario;

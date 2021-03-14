@@ -1,6 +1,6 @@
 import React from "react";
 import { Exame } from "../../models/Exame";
-import './tabelaExame.css';
+import './exameTabela.css';
 
 interface ExamesProps {
   listaExames: Array<Exame>
