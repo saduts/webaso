@@ -1,1 +1,1 @@
-web: node -r dotenv/config --experimental-modules app.js
+webaso: npm start
