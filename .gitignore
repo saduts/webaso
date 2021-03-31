@@ -2,9 +2,6 @@
 
 # dependencies
 /node_modules
-/document
-/kanban
-/prototipo
 /.pnp
 .pnp.js
 
