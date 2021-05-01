@@ -1,11 +1,10 @@
 import express from 'express'
-import atendimento from '../controller/atendimentoController.js'
+import atendimento from '../middleware/atendimentoMiddleware.js'
 
 const app = express()
 app.post('/aso', atendimento.create)
 app.get('/aso', atendimento.findAll)
 app.get('/aso/:id', atendimento.findOne)
-app.put('/aso/:id', atendimento.update);
-app.patch('/aso/:id', atendimento.patch);
 app.delete('/aso/:id', atendimento.remove);
+app.put('/aso/', atendimento.update);
 export { app as atendimentoRouter };

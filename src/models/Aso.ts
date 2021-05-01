@@ -24,5 +24,4 @@ export class Aso {
     this.exame = exame;
     this.usuario = usuario;
   }
-
 }
