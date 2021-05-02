@@ -1,0 +1,112 @@
+
+2021-05-02T12:17:59.211Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T12:20:36.303Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T12:22:39.668Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T12:22:49.576Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T12:29:01.539Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T12:29:09.765Z [webaso-api] info: Atualizado o ASO id: 14
+2021-05-02T12:29:09.767Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T12:29:17.061Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T12:29:32.829Z [webaso-api] info: Consultado o ASO id: 14
+2021-05-02T12:29:35.992Z [webaso-api] info: Removido o ASO id: 13
+2021-05-02T12:29:39.733Z [webaso-api] info: Removido o ASO id: 14
+2021-05-02T12:48:27.936Z [webaso-api] info: Removido o ASO id: 14
+2021-05-02T12:48:32.799Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T12:48:32.801Z [webaso-api] info: Atendimento Middleware Create
+2021-05-02T13:09:17.406Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:10:42.450Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:10:42.456Z [webaso-api] info: Atendimento Middleware findOne id - 
+2021-05-02T13:13:29.539Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:13:29.544Z [webaso-api] info: Atendimento Middleware findOne id - 14
+2021-05-02T13:25:13.655Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:25:59.177Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:25:59.183Z [webaso-api] error: Atendimento Middleware findOne id - 14 ReferenceError: resres is not defined
+2021-05-02T13:25:59.187Z [webaso-api] info: Atendimento Middleware findOne id: 14
+2021-05-02T13:26:30.142Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:26:30.145Z [webaso-api] info: Atendimento Middleware findOne id: 14
+2021-05-02T13:26:38.258Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:26:38.259Z [webaso-api] info: Atendimento Middleware findOne id: 14
+2021-05-02T13:26:38.869Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:26:38.870Z [webaso-api] info: Atendimento Middleware findOne id: 14
+2021-05-02T13:46:46.415Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:47:28.877Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:48:03.636Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:49:09.109Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:49:21.369Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:49:32.005Z [webaso-api] warn: Não encontrado o ASO id: 14
+2021-05-02T13:50:04.529Z [webaso-api] info: Removido o ASO id: 14
+2021-05-02T13:50:54.022Z [webaso-api] info: Removido o ASO id: 14
+2021-05-02T13:51:17.682Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T13:54:58.816Z [webaso-api] info: false
+2021-05-02T13:56:25.303Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T13:58:09.978Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T13:58:17.115Z [webaso-api] info: Removido o ASO id: 2
+2021-05-02T13:58:30.140Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:05:25.094Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:05:33.428Z [webaso-api] info: Atualizado o ASO id: 14
+2021-05-02T14:05:33.430Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:05:39.338Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:05:46.667Z [webaso-api] info: Atualizado o ASO id: 4
+2021-05-02T14:05:55.539Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:06:05.415Z [webaso-api] info: Consultado o ASO id: 14
+2021-05-02T14:06:10.823Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:06:22.112Z [webaso-api] info: Consultado o ASO id: 14
+2021-05-02T14:06:27.525Z [webaso-api] warn: Não encontrado o ASO id: 555
+2021-05-02T14:06:43.842Z [webaso-api] info: Removido o ASO id: 14
+2021-05-02T14:07:13.066Z [webaso-api] info: Atualizado o ASO id: 4
+2021-05-02T14:07:15.595Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:07:26.900Z [webaso-api] info: Consultado o ASO id: 4
+2021-05-02T14:07:33.282Z [webaso-api] info: Atualizado o ASO id: 4
+2021-05-02T14:07:36.549Z [webaso-api] info: Consultado o ASO id: 4
+2021-05-02T14:07:44.092Z [webaso-api] info: Atualizado o ASO id: 4
+2021-05-02T14:07:48.234Z [webaso-api] info: Consultado o ASO id: 4
+2021-05-02T14:08:06.685Z [webaso-api] info: Atualizado o ASO id: 4444
+2021-05-02T14:08:06.687Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:13:55.000Z [webaso-api] info: Atualizado o ASO id: 4444
+2021-05-02T14:13:55.006Z [webaso-api] error: Atendimento Middleware findOne - ReferenceError: asoAtual is not defined
+2021-05-02T14:18:42.168Z [webaso-api] info: Atualizado o ASO id: 4444
+2021-05-02T14:18:51.722Z [webaso-api] info: Atualizado o ASO id: 4444
+2021-05-02T14:18:55.302Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:19:33.532Z [webaso-api] info: Atualizado o ASO id: 14
+2021-05-02T14:19:33.535Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:19:42.832Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:22:02.682Z [webaso-api] info: Atualizado o ASO id: 14
+2021-05-02T14:22:11.267Z [webaso-api] info: Atualizado o ASO id: 700
+2021-05-02T14:22:11.270Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:24:18.564Z [webaso-api] info: Atualizado o ASO id: 700
+2021-05-02T14:24:29.242Z [webaso-api] info: Atualizado o ASO id: 
+2021-05-02T14:24:29.244Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:24:38.319Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:25:05.629Z [webaso-api] info: Atualizado o ASO id: 
+2021-05-02T14:25:05.631Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:25:52.728Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:25:57.440Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:28:13.209Z [webaso-api] info: Atualizado o ASO id: 
+2021-05-02T14:28:13.211Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:28:26.307Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:28:26.309Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:28:30.085Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:30:39.981Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:31:30.247Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:32:28.259Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:32:39.704Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:33:21.554Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:33:24.249Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:34:37.449Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:34:37.453Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:35:36.194Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:35:36.199Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:36:03.675Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:36:03.677Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:36:15.010Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:36:32.196Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:36:32.198Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:36:35.687Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:37:21.191Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:37:25.828Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:37:29.216Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:37:39.001Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-02T14:37:39.003Z [webaso-api] info: ASO gravado com sucesso
+2021-05-02T14:37:41.172Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-02T14:38:04.052Z [webaso-api] info: Atualizado o ASO id: 100
+2021-05-02T14:40:04.472Z [webaso-api] info: Consultado todos os ASOs da base de dados.

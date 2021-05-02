@@ -1,0 +1,4 @@
+{"foo":"bar","level":"info","message":"Hello created log files!"}
+{"foo":"bar","level":"info","message":"Hello created log files!"}
+2021-05-02T12:00:26.171Z [webaso-api] info: Hello created log files!
+2021-05-02T12:02:41.552Z [webaso-api] info: Hello created log files!

@@ -1,9 +1,9 @@
-import dataFileUtil from '../controller/asoController.js'
+import atendimentoController from '../controller/atendimentoController.js'
 import aso from '../model/asoAtendimento.js'
+import logger from '../util/loggerUtil.js'
 
 const create = async (req, res) => {
   try {
-
     aso.nomeFuncionario = req.body.nomeFuncionario
     aso.nomeEmpresa = req.body.nomeEmpresa
     aso.dataAtendimento = req.body.dataAtendimento
@@ -12,73 +12,54 @@ const create = async (req, res) => {
     aso.situacaoAtendimento = req.body.situacaoAtendimento
     aso.exames = req.body.exames
     aso.riscos = req.body.riscos
-
-    await dataFileUtil.inserir(aso);
-    res.status(200).send("ASO INSERIDO COM SUCESSO!");
-
+    await atendimentoController.inserir(aso)
+    res.status(201).send()
   } catch (error) {
-    res.status(500).send(`Erro ao salvar ASO ${error}`);
+    res.status(500).send(error)
+    logger.erro(`Atendimento Middleware Create: ${error}`)
   }
-};
+}
 
 const findAll = async (_, res) => {
   try {
-    const data = await dataFileUtil.obterTodos();
-    res.send(data);
-
+    const data = await atendimentoController.obterTodos()
+    res.status(200).send(data)
   } catch (error) {
-    res.status(500).send('Erro ao buscar todos os documentos ASO.');
+    res.status(500).send(error)
+    logger.error(`Atendimento Middleware findAll - ${error}`)
   }
-};
+}
 
 const findOne = async (req, res) => {
-  const id = req.params.id;
-  console.log(id)
   try {
-
-    const data = await dataFileUtil.obterPorId(id);
-
-    if (!data) {
-      res.send(`Não encontrato o ASO - id: ${id}`);
-    } else {
-      res.send(data);
-    }
-
+    const data = await atendimentoController.obterPorId(req.params.id)
+    res.status(200).send(data)
   } catch (error) {
-    res.status(500).send(`Erro ao buscar o ASO id: ${id} ${error}`);
+    res.status(500).send(error)
+    logger.error(`Atendimento Middleware findOne - ${error}`)
   }
-};
+}
 
 const remove = async (req, res) => {
-  const id = req.params.id;
-
   try {
-    const data = await dataFileUtil.remover(id)
-    if (!data) {
-      res.send(`Não encontrato o ASO id: ${id} para remover.`);
-    } else {
-      res.send('ASO excluido com sucesso.');
-    }
-
+    const data = await atendimentoController.remover(req.params.id)
+    if (!data) res.status(404)
+    else res.status(200)
   } catch (error) {
-    res.status(500).send(`Erro ao excluir o ASO id: ${id} ${error}`);
+    res.status(500).send(error)
+    logger.error(`Atendimento Middleware findOne - ${error}`)
   }
-};
+  res.send()
+}
 
 const update = async (req, res) => {
   try {
-
-    const data = await dataFileUtil.atualizar(req.body);
-
-    if (!data) {
-      res.send(`Não encontrato o ASO - id: ${req.body.id}`);
-    } else {
-      res.send(data);
-    }
-
+    const data = await atendimentoController.atualizar(req.body)
+    res.status(200).send(data)
   } catch (error) {
-    res.status(500).send(`Erro ao atualizar o ASO - id: ${req.body.id} ${error}`);
+    res.status(500).send(error);
+    logger.error(`Atendimento Middleware findOne - ${error}`)
   }
 };
 
-export default { create, findAll, findOne, remove, update, patch };
+export default { create, findAll, findOne, remove, update };
