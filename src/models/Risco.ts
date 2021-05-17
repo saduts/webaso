@@ -1,4 +1,6 @@
-export enum Risco {
+enum Risco {
   "Ruído",
   "Ambiental"
 }
+
+export default Risco

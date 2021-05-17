@@ -1,4 +1,4 @@
-export class Usuario {
+class Usuario {
   private login: string;
   private nome: string;
   private email: string;
@@ -11,3 +11,5 @@ export class Usuario {
     this.dataCadastro = dataCadastro;
   }
 }
+
+export default Usuario

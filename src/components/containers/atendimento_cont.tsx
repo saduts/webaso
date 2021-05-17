@@ -1,9 +1,17 @@
-import React, { useState } from "react";
-import TebelaExame from "../exame-tabela/exameTabela";
+import React from "react";
+import TebelaExame from "../exame-tabela/TabelaExames";
 import ContRiscos from "../risco/risco-lista-add/riscoListaAdd";
+import Exame from "../../models/Exame";
+
 import './containers.css'
 
 const ContAtendimento = () => {
+
+  const [listaExames, setExames] = React.useState([])
+
+  const addExame = () => {
+    const lista = [...listaExames, { new Exame() }]
+  }
 
   return (
     <>
@@ -35,7 +43,7 @@ const ContAtendimento = () => {
                 <span className={'spanTitleAtendimento'}>ATENDIDO</span>
               </div>
               <div className={'divPanel'}>
-                <button className={'divButton'}>Adionar Exame</button>
+                <button className={'divButton'} onClick={addExame}>Adionar Exame</button>
               </div>
             </div>
             <div className={'divPanel'}>

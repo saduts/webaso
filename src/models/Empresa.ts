@@ -1,4 +1,4 @@
-export class Empresa {
+class Empresa {
   private razaoSocial: string;
   private nomeFantasia: string;
   private cnpj: string;
@@ -9,3 +9,5 @@ export class Empresa {
     this.cnpj = cnpj;
   }
 }
+
+export default Empresa

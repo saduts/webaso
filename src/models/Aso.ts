@@ -1,9 +1,9 @@
-import { Empresa } from "./Empresa";
-import { Exame } from "./Exame";
+import Empresa from "./Empresa";
+import Exame from "./Exame";
 import Funcionario from "./Funcionario";
-import { Risco } from "./Risco";
+import Risco from "./Risco";
 import { TipoConsulta } from "./TipoConsulta";
-import { Usuario } from "./Usuario";
+import Usuario from "./Usuario";
 
 export class Aso {
 
