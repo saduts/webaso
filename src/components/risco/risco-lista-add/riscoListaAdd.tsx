@@ -1,19 +1,16 @@
 import * as React from 'react'
-import { RiscoTabela, IRiscoProps } from "../risco-tabela/RiscoTabela"
+import { RiscoTabelaRow, IRiscoProps } from "../risco-tabela/RiscoTabelaRow"
 import './riscoListaAdd.css'
 
 const ContRiscos: React.FC = () => {
 
-  const [riscosProps, setRiscosProps] = React.useState<IRiscoProps[]>([{ risco: "Risco" }])
+  const [riscos, setRiscos] = React.useState<IRiscoProps[] | []>([])
 
   const addRisco = () => {
-    let risco = riscosProps
-    risco.push({ risco: "Teste" })
-    setRiscosProps(risco)
-    console.log(risco)
+    let risco: IRiscoProps = { risco: 'teste', comentario: '' }
+    const lista = [...riscos, risco]
+    setRiscos(lista)
   }
-
-
 
   return (
     <>
@@ -34,17 +31,12 @@ const ContRiscos: React.FC = () => {
       </div>
       <div className={'divPanel'}>
         <table className={'tabelaExame'}>
-
           <thead>
-            <tr>
-              <th>Risco</th>
-              <th>Comentário</th>
-            </tr>
+            <th>Risco</th>
+            <th>Comentário</th>
           </thead>
           <tbody>
-            {
-              riscosProps.map(item => (<RiscoTabela risco={item.risco} />))
-            }
+            {riscos.map((item: IRiscoProps) => <RiscoTabelaRow risco={item.risco} comentario={item.comentario}></RiscoTabelaRow>)}
           </tbody>
         </table>
       </div>

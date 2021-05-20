@@ -5,12 +5,13 @@ import Exame from "../../models/Exame";
 
 import './containers.css'
 
-const ContAtendimento = () => {
+const ContAtendimento: React.FC = () => {
 
-  const [listaExames, setExames] = React.useState([])
+  const [listaExames, setExames] = React.useState<Exame[] | []>([])
 
   const addExame = () => {
-    const lista = [...listaExames, { new Exame() }]
+    const lista = [...listaExames, new Exame("1", "Sadu Toledo de Souza", new Date(), "Clinica", 123, "responsavel")]
+    setExames(lista)
   }
 
   return (
@@ -47,7 +48,7 @@ const ContAtendimento = () => {
               </div>
             </div>
             <div className={'divPanel'}>
-              <TebelaExame listaExames={[]} />
+              <TebelaExame listaExames={listaExames} />
             </div>
           </div>
           <div className={'divPanel'}>

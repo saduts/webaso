@@ -3,14 +3,15 @@ import './riscoTabela.css';
 
 export interface IRiscoProps {
   risco: string
+  comentario: string
 }
 
-export const RiscoTabela: React.FC<IRiscoProps> = ({ risco }) => {
+export const RiscoTabelaRow: React.FC<IRiscoProps> = ({ risco, comentario }) => {
   return (
     <>
       <tr>
         <td>{risco}</td>
-        <td></td>
+        <td>{comentario}</td>
       </tr>
     </>
   )
