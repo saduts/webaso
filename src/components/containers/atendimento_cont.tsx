@@ -14,6 +14,10 @@ const ContAtendimento: React.FC = () => {
     setExames(lista)
   }
 
+  const handleActionDeleteClick = (id: string) => {
+    console.log(`Remove id - ${id}`)
+  }
+
   return (
     <>
       <span className={'spanTitle'}>Atendimeto</span>
@@ -48,7 +52,7 @@ const ContAtendimento: React.FC = () => {
               </div>
             </div>
             <div className={'divPanel'}>
-              <TebelaExame listaExames={listaExames} />
+              <TebelaExame listaExames={listaExames} delete={handleActionDeleteClick} />
             </div>
           </div>
           <div className={'divPanel'}>
