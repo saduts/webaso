@@ -3,15 +3,30 @@ import Exame from "../../models/Exame"
 import RowTabelaExames from "./RowTabelaExames"
 import './tabelaExame.css'
 
-interface ExamesProps {
-  listaExames: Array<Exame>
-  delete: Function
+export interface TabelaExamesProps {
+  listaExames: Exame[]
+  adicionar: Function
+  remover: Function
 }
 
-const TabelaExame: React.FC<ExamesProps> = (props) => {
+const TabelaExame: React.FC<TabelaExamesProps> = (props) => {
+
+  let listaExames = props.listaExames
+
+  const addExame = () => {
+    props.adicionar()
+  }
+
+  const remover = (id: string) => {
+    props.remover(id)
+  }
 
   return (
     <>
+      <div className={'divPanel'}>
+        <button className={'divButton'} onClick={addExame}>Adionar Exame</button>
+      </div>
+
       <table className={'tabelaExame'}>
         <thead>
           <th>Exame</th>
@@ -21,13 +36,13 @@ const TabelaExame: React.FC<ExamesProps> = (props) => {
           <th>Remover</th>
         </thead>
         <tbody>
-          {
-            props.listaExames.map((exame) => <RowTabelaExames exame={exame} delete={props.delete} />)
-          }
+          {listaExames.map((value: Exame) => {
+            return (<RowTabelaExames exame={value} delete={remover}></RowTabelaExames>)
+          })}
         </tbody>
       </table >
     </>
   )
 }
 
-export default TabelaExame;
+export default TabelaExame

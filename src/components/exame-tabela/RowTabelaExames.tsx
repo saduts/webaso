@@ -9,14 +9,13 @@ interface ExameProps {
 const RowTabelaExames: React.FC<ExameProps> = (props) => {
 
   const handleClick = (event: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
-    console.log("teste")
     props.delete(props.exame.id)
   }
 
   return (
     <React.Fragment>
       <tr>
-        <td>{props.exame.nome}</td>
+        <td>{props.exame.id} - {props.exame.nome}</td>
         <td></td>
         <td>{props.exame.clinica}</td>
         <td>{props.exame.responsavel}</td>

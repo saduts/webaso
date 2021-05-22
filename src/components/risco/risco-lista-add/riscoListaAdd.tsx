@@ -1,15 +1,28 @@
 import * as React from 'react'
-import { RiscoTabelaRow, IRiscoProps } from "../risco-tabela/RiscoTabelaRow"
+import { RiscoTabelaRow } from "../risco-tabela/RiscoTabelaRow"
 import './riscoListaAdd.css'
 
-const ContRiscos: React.FC = () => {
+export interface IRisco {
+  id: string
+  risco: string
+  comentario: string
+}
 
-  const [riscos, setRiscos] = React.useState<IRiscoProps[] | []>([])
+export interface RiscoProps {
+  riscos: IRisco[]
+  adicionar: Function
+  remover: Function
+}
+
+export const ContRiscos: React.FC<RiscoProps> = (props) => {
 
   const addRisco = () => {
-    let risco: IRiscoProps = { risco: 'teste', comentario: '' }
-    const lista = [...riscos, risco]
-    setRiscos(lista)
+    let select = document.getElementById('tipoRiscos') as HTMLSelectElement
+    props.adicionar({ id: props.riscos.length.toString(), risco: select.options[select.selectedIndex].text, comentario: '' })
+  }
+
+  const handleActionDeleteClick = (id: string) => {
+    props.remover(id)
   }
 
   return (
@@ -32,16 +45,16 @@ const ContRiscos: React.FC = () => {
       <div className={'divPanel'}>
         <table className={'tabelaExame'}>
           <thead>
+            <th>Número</th>
             <th>Risco</th>
             <th>Comentário</th>
+            <th>Ações</th>
           </thead>
           <tbody>
-            {riscos.map((item: IRiscoProps) => <RiscoTabelaRow risco={item.risco} comentario={item.comentario}></RiscoTabelaRow>)}
+            {props.riscos.map((item: IRisco) => <RiscoTabelaRow id={item.id} risco={item.risco} comentario={item.comentario} delete={handleActionDeleteClick} />)}
           </tbody>
         </table>
       </div>
     </>
   )
 }
-
-export default ContRiscos;
