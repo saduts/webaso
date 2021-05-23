@@ -110,3 +110,40 @@
 2021-05-02T14:37:41.172Z [webaso-api] info: Consultado todos os ASOs da base de dados.
 2021-05-02T14:38:04.052Z [webaso-api] info: Atualizado o ASO id: 100
 2021-05-02T14:40:04.472Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T12:49:18.527Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T12:50:19.085Z [webaso-api] warn: Não encontrado o ASO id: 4
+2021-05-23T12:50:27.750Z [webaso-api] info: Atualizado o ASO id: undefined
+2021-05-23T12:50:27.753Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T12:50:32.519Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T12:51:05.499Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T12:56:53.961Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T12:59:56.114Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T13:00:23.743Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T13:00:50.719Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T13:01:33.899Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T13:01:46.742Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T13:05:08.168Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:05:09.142Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:05:27.980Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T13:07:05.979Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T13:22:25.000Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:42:35.475Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:42:36.875Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:42:37.064Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:42:45.816Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T13:45:55.402Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:46:24.724Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:48:03.820Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:50:39.051Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T13:50:47.811Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-05-23T14:00:59.354Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:01:00.858Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:01:01.057Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:01:01.405Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:07:45.863Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:07:46.412Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:07:46.580Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:07:46.900Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:07:47.078Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:07:47.238Z [webaso-api] info: ASO gravado com sucesso
+2021-05-23T14:07:50.720Z [webaso-api] info: Consultado todos os ASOs da base de dados.

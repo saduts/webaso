@@ -1,38 +1,63 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 import TebelaExame from "../exame-tabela/TabelaExames";
 import Exame from "../../models/Exame"
 import { ContRiscos, IRisco } from "../risco/risco-lista-add/riscoListaAdd";
 import ContFuncionario from "./funcionario_cont";
 import Funcionario from "../../models/Funcionario";
+import * as api from "../../api/apiService";
 import './containers.css'
 
 const ContAtendimento: React.FC = () => {
 
-  const [listaExames, setExames] = React.useState<Exame[] | []>([])
-  const [riscos, setRiscos] = React.useState<IRisco[] | []>([])
+  const [listaExames, setListaExames] = React.useState<Exame[] | []>([])
+  const [listaRiscos, setListaRiscos] = React.useState<IRisco[] | []>([])
   let funcionario: Funcionario = new Funcionario("Sadu Toledo de Souza", "Funcao", new Date(1995, 11, 17), new Date(1995, 11, 17), "CPF", "RG", "CTPS", "SETOR", "CARGO");
 
   const adionarRiscos = (risco: IRisco) => {
-    setRiscos([...riscos, risco])
+    setListaRiscos([...listaRiscos, risco])
   }
 
   const removerRiscos = (id: string) => {
-    setRiscos(riscos.filter((item) => item.id !== id))
+    setListaRiscos(listaRiscos.filter((item) => item.id !== id))
   }
 
   const adionarExame = () => {
-    setExames([...listaExames, new Exame(listaExames.length.toString(), "Descrisção Exame", new Date(), "Clínica", 123, "Responsável")])
+    setListaExames([...listaExames, new Exame(listaExames.length.toString(), "Descrisção Exame", new Date(), "Clínica", 123, "Responsável")])
   }
 
   const removerExame = (id: string) => {
-    setExames(listaExames.filter((item) => item.id !== id))
+    setListaExames(listaExames.filter((item) => item.id !== id))
   }
 
   const handleClick = () => {
-    console.log('CADASTRAR')
-    console.log(funcionario)
-    console.log(listaExames)
-    console.log(riscos)
+
+    const exames: Array<{ descricao: string, dataRealizacao: string }> = listaExames.map((exame: Exame) => {
+      const { nome, dataRealizacao } = exame
+      return { descricao: nome, dataRealizacao: dataRealizacao.toString() }
+    })
+
+    let riscos: Array<{ risco: string, comentario: string }> = listaRiscos.map((item: IRisco) => {
+      return ({
+        risco: item.risco,
+        comentario: item.comentario,
+      })
+    })
+
+    const selRetorno = (document.getElementById('retornoTrabalho') as HTMLSelectElement)
+    const selTipoConsulta = (document.getElementById('tipoConsulta') as HTMLSelectElement)
+    const situacaoAtendimento = (document.getElementById('situacaoAtendimento') as HTMLSpanElement)
+
+    let atendimentoAso: api.IAsoAtendimento = {
+      nomeFuncionario: funcionario.nome,
+      nomeEmpresa: "Empresa",
+      dataAtendimento: (document.getElementById('dataAtendimento') as HTMLInputElement).value,
+      tipoConsulta: selTipoConsulta.options[selTipoConsulta.selectedIndex].text,
+      retornoTrabalho: selRetorno.options[selRetorno.selectedIndex].text,
+      situacaoAtendimento: situacaoAtendimento.textContent != null ? situacaoAtendimento.textContent : '',
+      exames: exames,
+      riscos: riscos
+    }
+    api.saveAso(atendimentoAso)
   }
 
   return (
@@ -46,7 +71,7 @@ const ContAtendimento: React.FC = () => {
             <div className={'divPanelLinha'}>
               <div className={'divPanelColuna'}>
                 <span className={'spanTitleAtendimento'}>Data do atendimento</span>
-                <input type="date" name="dataAtendimento" />
+                <input type="date" name="dataAtendimento" id="dataAtendimento" />
               </div>
               <div className={'divPanelColuna'}>
                 <span className={'spanTitleAtendimento'}>Tipo Consulta</span>
@@ -56,13 +81,13 @@ const ContAtendimento: React.FC = () => {
               </div>
               <div className={'divPanelColuna'}>
                 <span className={'spanTitleAtendimento'}>Retorno ao Trabalho</span>
-                <select name="tipoConsulta" id="tipoConsulta">
+                <select name="retornoTrabalho" id="retornoTrabalho">
                   <option value="admissonal">Admissonal</option>
                 </select>
               </div>
               <div className={'divPanelColuna'}>
                 <span className={'spanTitleAtendimento'}>Situação Atendimento</span>
-                <span className={'spanTitleAtendimento'}>ATENDIDO</span>
+                <span className={'spanTitleAtendimento'} id="situacaoAtendimento">ATENDIDO</span>
               </div>
             </div>
             <div className={'divPanel'}>
@@ -70,7 +95,7 @@ const ContAtendimento: React.FC = () => {
             </div>
           </div>
           <div className={'divPanel'}>
-            <ContRiscos riscos={riscos} adicionar={adionarRiscos} remover={removerRiscos} />
+            <ContRiscos riscos={listaRiscos} adicionar={adionarRiscos} remover={removerRiscos} />
           </div>
         </div>
         <button className={'divButton'} onClick={handleClick}>Imprimir ASO</button>
