@@ -1,28 +1,31 @@
-import dataFileUtil from '../util/dataFileUtil.js'
+import AtendimentoModel from '../model/atendimento.js'
 
-const inserir = async (aso) => {
-  await dataFileUtil.save(aso)
+const inserir = async (atendimento) => {
+
+  const atendimentoModel = new AtendimentoModel({
+    codigoUsuario: atendimento.codigoUsuario,
+    codigoAso: atendimento.codigoAso,
+    dataRealizacao: new Date()
+  });
+
+  await atendimentoModel.save()
 }
 
-const obterTodos = async (aso) => {
-  return await dataFileUtil.findAll()
+const obterTodos = async () => {
+
+  console.log(AtendimentoModel)
+  return await AtendimentoModel.find({})
 }
 
 const obterPorId = async (id) => {
-  return await dataFileUtil.findById(id)
 }
 
 const remover = async (id) => {
-  let retorno = await dataFileUtil.remove(id)
-  if (retorno !== -1) {
-    return true
-  } else {
-    return false
-  }
+
 }
 
 const atualizar = async (aso) => {
-  return await dataFileUtil.update(aso)
+
 }
 
 export default { inserir, obterTodos, obterPorId, remover, atualizar }

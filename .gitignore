@@ -3,8 +3,9 @@
 # dependencies
 /node_modules
 /api/webasoapi/node_modules
+/api/webasoapi/.env
 /.pnp
-.pnp.js
+.pnp
 
 # testing
 /coverage

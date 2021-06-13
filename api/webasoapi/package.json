@@ -2,7 +2,7 @@
   "name": "webasoapi",
   "version": "0.0.1",
   "description": "API com os end point basicos de persistencia",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.13",
     "winston": "^3.3.3"
   },
   "type": "module",

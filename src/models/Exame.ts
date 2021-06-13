@@ -2,18 +2,14 @@ class Exame {
 
   private _id: string
   private _nome: string
-  private _dataRealizacao: Date
-  private _clinica: string
+  private _descricao: string
   private _valor: number
-  private _responsavel: string
 
-  constructor(id: string, nome: string, dataRealizacao: Date, clinica: string, valor: number, responsavel: string) {
+  constructor(id: string, nome: string, descricao: string, valor: number) {
     this._id = id
     this._nome = nome
-    this._dataRealizacao = dataRealizacao
-    this._clinica = clinica
+    this._descricao = descricao
     this._valor = valor
-    this._responsavel = responsavel
   }
 
   public get id(): string {
@@ -32,22 +28,6 @@ class Exame {
     this._nome = nome
   }
 
-  public get dataRealizacao(): Date {
-    return this._dataRealizacao
-  }
-
-  public set dataRealizacao(dataRealizacao: Date) {
-    this._dataRealizacao = dataRealizacao
-  }
-
-  public get clinica(): string {
-    return this._clinica
-  }
-
-  public set clinica(clinica: string) {
-    this._clinica = clinica
-  }
-
   public get valor(): number {
     return this._valor
   }
@@ -56,12 +36,12 @@ class Exame {
     this._valor = valor
   }
 
-  public get responsavel(): string {
-    return this._responsavel
+  public get descricao(): string {
+    return this._descricao
   }
 
-  public set responsavel(responsavel: string) {
-    this._responsavel = responsavel
+  public set descricao(descricao: string) {
+    this._descricao = descricao
   }
 }
 

@@ -1,18 +1,9 @@
 import atendimentoController from '../controller/atendimentoController.js'
-import aso from '../model/asoAtendimento.js'
 import logger from '../util/loggerUtil.js'
 
 const create = async (req, res) => {
   try {
-    aso.nomeFuncionario = req.body.nomeFuncionario
-    aso.nomeEmpresa = req.body.nomeEmpresa
-    aso.dataAtendimento = req.body.dataAtendimento
-    aso.tipoConsulta = req.body.tipoConsulta
-    aso.retornoTrabalho = req.body.retornoTrabalho
-    aso.situacaoAtendimento = req.body.situacaoAtendimento
-    aso.exames = req.body.exames
-    aso.riscos = req.body.riscos
-    await atendimentoController.inserir(aso)
+    await atendimentoController.inserir(req.body)
     res.status(201).send()
   } catch (error) {
     res.status(500).send(error)

@@ -147,3 +147,10 @@
 2021-05-23T14:07:47.078Z [webaso-api] info: ASO gravado com sucesso
 2021-05-23T14:07:47.238Z [webaso-api] info: ASO gravado com sucesso
 2021-05-23T14:07:50.720Z [webaso-api] info: Consultado todos os ASOs da base de dados.
+2021-06-13T19:07:11.596Z [webaso-api] error: Atendimento Middleware findAll - ReferenceError: name is not defined
+2021-06-13T19:08:44.013Z [webaso-api] error: Atendimento Middleware findAll - TypeError: Cannot read property 'findAll' of undefined
+2021-06-13T19:10:36.085Z [webaso-api] error: Atendimento Middleware findAll - TypeError: Cannot read property 'find' of undefined
+2021-06-13T19:12:38.153Z [webaso-api] error: Atendimento Middleware findAll - TypeError: Cannot read property 'find' of undefined
+2021-06-13T19:15:27.274Z [webaso-api] error: Atendimento Middleware findAll - TypeError: Cannot read property 'find' of undefined
+2021-06-13T19:20:07.686Z [webaso-api] error: Atendimento Middleware findAll - TypeError: Cannot read property 'find' of undefined
+2021-06-13T19:30:01.189Z [webaso-api] error: Atendimento Middleware findAll - TypeError: AtendimentoModel.find is not a function

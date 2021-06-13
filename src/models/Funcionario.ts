@@ -1,24 +1,42 @@
 class Funcionario {
-  private _nome: string;
-  private _funcao: string;
-  private _dataNascismento: Date;
-  private _dataAdmissao: Date;
-  private _cpf: string;
-  private _rg: string;
-  private _ctps: string;
-  private _setor: string;
-  private _cargo: string;
 
-  constructor(nome: string, funcao: string, dataNascimento: Date, dataAdmissao: Date, cpf: string, rg: string, ctps: string, setor: string, cargo: string) {
-    this._nome = nome;
-    this._funcao = funcao;
-    this._dataNascismento = dataNascimento;
-    this._dataAdmissao = dataAdmissao;
-    this._cpf = cpf;
-    this._rg = rg;
-    this._ctps = ctps;
-    this._setor = setor;
-    this._cargo = cargo;
+  private _id: string
+  private _nome: string
+  private _dataAdmissao: Date
+  private _rg: string
+  private _setor: string
+  private _cargo: string
+  private _funcao: string
+  private _cnpjContratante: number
+  private _email: string
+  private _telefone: number
+  private _dataNascismento: Date
+  private _cpf: string
+  private _ctps: string
+
+  constructor(id: string, nome: string, dataAdmissao: Date, rg: string, setor: string, cargo: string, funcao: string,
+    cnpjContratante: number, email: string, telefone: number, dataNascismento: Date, cpf: string, ctps: string) {
+    this._id = id
+    this._nome = nome
+    this._dataAdmissao = dataAdmissao
+    this._rg = rg
+    this._setor = setor
+    this._cargo = cargo
+    this._funcao = funcao
+    this._cnpjContratante = cnpjContratante
+    this._email = email
+    this._telefone = telefone
+    this._dataNascismento = dataNascismento
+    this._cpf = cpf
+    this._ctps = ctps
+  }
+
+  public get id(): string {
+    return this._id;
+  }
+
+  public set id(id: string) {
+    this._id = id;
   }
 
   public get nome(): string {
@@ -93,6 +111,29 @@ class Funcionario {
     this._cargo = cargo;
   }
 
+  public get cnpjContratante(): number {
+    return this._cnpjContratante;
+  }
+
+  public set cnpjContratante(cnpjContratante: number) {
+    this._cnpjContratante = cnpjContratante;
+  }
+
+  public get email(): string {
+    return this._email;
+  }
+
+  public set email(email: string) {
+    this._email = email;
+  }
+
+  public get telefone(): number {
+    return this.telefone;
+  }
+
+  public set telefone(telefone: number) {
+    this._telefone = telefone;
+  }
 }
 
 export default Funcionario;
