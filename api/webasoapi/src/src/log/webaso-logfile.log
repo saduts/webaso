@@ -1,2 +1,0 @@
-2021-05-23T12:46:10.484Z [webaso-api] error: Atendimento Middleware findAll - Error: ENOENT: no such file or directory, open 'C:\Users\suporte.STFBHZN002751-W\Documents\MBA\PA\webaso\api\webasoapi\src\src\data\aso.json'
-2021-05-23T12:47:21.622Z [webaso-api] error: Atendimento Middleware findAll - Error: ENOENT: no such file or directory, open 'C:\Users\suporte.STFBHZN002751-W\Documents\MBA\PA\webaso\api\webasoapi\src\src\data\aso.json'
